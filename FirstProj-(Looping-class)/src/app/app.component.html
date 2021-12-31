@@ -1,0 +1,68 @@
+
+<div class="body-container">
+  <div>
+    <div class="hd1">
+      <h1>{{title}}</h1>
+    </div>
+  </div>
+  <div *ngFor="let item of blogArray">
+    <div class="hd2" >
+      <div>
+        <h1 class="tx-clr">{{item.topic}}</h1>
+        <h6>{{item.date}}</h6>
+      </div>
+      <div>
+        <p>
+          {{item.content}}
+        </p>
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary"> <a href="google.com">Read More</a> </button>
+      </div>
+      <div>
+        <img src="" alt="">
+        <div>
+          {{item.category}}
+        </div>
+    
+      </div>
+      <div>
+        <img src="" alt="">
+        <div>
+          {{item.subcategory}}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- <div class="hd2">
+    <div>
+      <h1 class="tx-clr">{{blogArray[1].topic}}</h1>
+      <h6>{{blogArray[1].date}}</h6>
+    </div>
+    <div>
+      <p>
+        {{blogArray[1].content}}
+      </p>
+    </div>
+    <div>
+      <button type="button" class="btn btn-primary"> <a href="google.com">Read More</a> </button>
+    </div>
+    <div>
+      <img src="" alt="">
+      <div>
+        {{blogArray[1].category}}
+      </div>
+  
+    </div>
+    <div>
+      <img src="" alt="">
+      <div>
+        {{blogArray[1].subcategory}}
+      </div>
+    </div>
+  </div>
+
+
+</div> -->
