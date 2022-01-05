@@ -1,0 +1,1 @@
+This project is to make you familiar with basic web-page designing without any framework or any advanced tools.
