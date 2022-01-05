@@ -1,0 +1,62 @@
+
+<div style="background-color: dimgray; padding: 5rem 8rem;" *ngFor="let com of lstcomments">
+
+	<div class="container test-plane">
+		<div class="row b_row">
+			<div class="col">
+				<img class="image-tst" src="txt.png">
+			</div>
+			<div class="col-6">
+				<div class="text-1">
+					<b>Client Details Form</b>
+				</div>
+				<div class="text-2">
+					ID:- {{com.id}} . Post ID:- {{com.postId}}
+				</div>
+			</div>
+			<div class="col-2">
+				<button class="button_1">
+					<b>TEMP</b>
+				</button>
+			</div>
+			<div class="col-2"></div>
+			<div class="col"></div>			
+		</div>
+		<div>
+			<h4><b>Name</b></h4>
+		</div>
+		<div class="text-2">
+			{{com.name}}
+		</div>
+		
+		
+		<div class="c_row">
+			<div>
+				<h4><b>E-mail</b></h4>
+			</div>
+			<div class="text-2">
+				{{com.email}}
+    	</div>
+      <div>
+				<h4><b>About</b></h4>
+			</div>
+			<div class="text-2">
+				{{com.body}}
+			</div>
+		</div>
+		<div class="row cb_row">
+			<div class="col-8"></div>
+			<div class="col-2">
+				<div class="text-3">
+					<b>Call</b>
+				</div>
+			</div>
+			<div class="col-2">
+				<button class="button_2">
+					<b>Text Message</b>
+				</button>
+			</div>
+		</div>		
+	</div>
+	
+</div>

@@ -1,0 +1,171 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<div class="base">
+    <div class="containerr roww">
+        <div class="coll-8 test-plane">
+            <div class="roww btn-roww">
+                <div class="plan cf">
+                    <input type="radio" name="radio1" id="a" value="a">
+                    <label class="free-label tst-button" for="a">
+                        PHYSICS
+                    </label> 
+                </div>
+                <div class="plan cf">
+                    <input type="radio" name="radio1" id="b" value="b" checked>
+                    <label class="b-label tst-button" for="b">
+                        CHEMISTRY
+                    </label>
+                </div>
+                <div class="plan cf">
+                    <input type="radio" name="radio1" id="c" value="c">
+                    <label class="c-label tst-button" for="c">
+                        MATHS
+                    </label>
+                </div>
+            </div>
+
+            <div class="containerr qstn-card">
+                <div class="roww qstn-header">
+                    <div class="coll-3 ">
+                        <div class="fly-l">
+                            Question 1
+                        </div>
+                    </div>
+                    <div class="coll-6"></div>
+                    <div class="coll-3 fly-r">
+                        Single Answer
+                    </div>
+                </div>
+                
+                <div class="qn-border">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, beatae suscipit quos debitis labore voluptatem accusamus adipisci dicta quam magnam.
+                </div>
+                <div *ngFor="let data of answerOptions">
+                    <div class="roww sl-height top-border">
+                        <div class="dot-1">
+                            {{data.option}}
+                        </div>
+                        <div>
+                            {{data.hints}}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="roww lw-section lw-btn-rt-set">
+                <div class="coll-5 roww">
+                    <div>
+                        <button class="lw-button-1">
+                            Review
+                        </button> 
+                    </div>
+                    <div>
+                        <button class="lw-button-1">
+                            Clear Response
+                        </button> 
+                    </div>
+                </div>
+                <div class="coll-3"></div>
+                <div class="coll-4 roww lw-btn-rt-set">
+                    <div class=" coll-4"></div>
+                    <div class="roww lw-btn-set">
+                        <div>
+                            <button class="lw-button-2">
+                                < Prev
+                            </button>
+                        </div>
+                        <div>
+                            <button class="lw-button-2">
+                                Next >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coll-3 test-plane-2">
+            <div class="test-plane-set-2">
+                <div class="roww qo-set">
+                    Question Overview
+                </div>
+
+                <div class="qn-scroll">
+                    <div class="cm-set">
+                        <div class="qo-font-1">
+                            Physics
+                        </div>
+                        <div class="dot-top" *ngFor="let data of physicsDots">
+                            <div>
+                                <button  class="dot-2">
+                                    {{data}}
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cm-set">
+                        <div class="qo-font-1">
+                            Chemistry
+                        </div>
+                        <div class="dot-top" *ngFor="let data of physicsDots">
+                            <div>
+                                <button  class="dot-2">
+                                    {{data}}
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="roww qo-set">
+                    Legend
+                </div>
+                <div class="roww lg-set">
+                    <div class="lg-dot-1">
+                        
+                    </div>
+                    <div class="qo-font">
+                        Not Viewed
+                    </div>
+                </div>
+                <div class="roww lg-set">
+                    <div class="lg-dot-2">
+                        
+                    </div>
+                    <div class="qo-font">
+                        Not Attempted
+                    </div>
+                </div>
+                <div class="roww lg-set">
+                    <div class="lg-dot-3">
+                        
+                    </div>
+                    <div class="qo-font">
+                        Attempted
+                    </div>
+                </div>
+                <div class="roww lg-set">
+                    <div class="lg-dot-4">
+                        
+                    </div>
+                    <div class="qo-font">
+                        Marked for review
+                    </div>
+                </div>
+                <div class="roww lg-set">
+                    <div class="lg-dot-5">
+                        
+                    </div>
+                    <div class="qo-font">
+                        Attempted and Marked for review
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
